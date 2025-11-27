@@ -1,0 +1,79 @@
+@use "../helpers" as *;
+
+.hero {
+  padding: rem(20) 0 ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include small {
+    padding: rem(40) 0;
+    background-position: 65% 50%;
+  }
+
+  &__container {
+  }
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    margin-bottom: fluid(250, 500);
+    align-items: center;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    font-size: fluid(16, 22);
+    font-weight: 700;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: rem(2) rem(18);
+    border-radius: rem(12);
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include medium {
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+  }
+
+  &__info {
+ 
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+  }
+
+  &__phone-number {
+    color: var(--color-secondary);
+    font-size: fluid(32, 57);
+    font-family: var(--font-family-accent);
+  }
+  &__phone-icon {
+    width: fluid(28, 40);
+    height: fluid(28, 40);
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    padding: rem(2);
+  }
+
+  &__info-text {
+    font-size: fluid(24, 32);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+  }
+}

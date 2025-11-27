@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Home page</title>
+  </head>
+  <body data-smooth-scroll="true">
+    <div id="page" class="site-page">
+      {{> header}}
+      <main id="primary" class="site-main">
+        <section class="hero" style="background-image: url(&quot;/images/hero.png&quot;)">
+          <div class="hero__container container">
+            <div class="hero__header">
+              <h1 class="hero__title">Евакуатор 24/7</h1>
+              <p class="hero__subtitle">Швидка доставка до місця ДТП 24/7</p>
+            </div>
+            <div class="hero__body">
+              <a href="#" class="button">Замовити Евакуатор</a>
+              <div class="hero__info">
+                <a href="#" class="hero__phone">
+                  <svg
+                    class="hero__phone-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"
+                    />
+                  </svg>
+                  <span class="hero__phone-number">+380506525388</span>
+                </a>
+                <p class="hero__info-text">24-години на добу</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="location">
+          <div class="location__heading section-heading">
+            <h2>Наша локація</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12m0 7.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35M12 22q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22m0-12"
+              />
+            </svg>
+          </div>
+          <div class="location__container container">
+            <h3 class="location__title">ШВИДКА ДОСТАВКА ДО МІСЦЯ ДТП 24/7</h3>
+            <div class="location__body">
+              <div class="location__content">
+                <p>Знаходимося в місті Лубни.</p>
+                <p>Працюємо по всій Полтавській області.</p>
+                <p>Лубни - Хорол - Миргород - Пирятин - Полтава - на всій території України.</p>
+              </div>
+              <div class="location__image">
+                <img src="/images/map.png" alt="Location" class="location__image-map" />
+                <img src="/images/line.svg" alt="Line" class="location__image-line" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="about__heading section-heading">
+            <h2>Наша робота</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="m19.275 19.8l.7-.7L12 11.125q.475-.575.738-1.3T13 8.3q0-1.875-1.313-3.175T8.5 3.825h-.25L11.325 6.9l-4.25 4.225L4 8.05v.275Q4 10.2 5.312 11.5T8.5 12.8q.8 0 1.513-.263T11.3 11.8l7.975 8Zm-1.4 1.425l-6.9-6.9q-.575.225-1.187.35t-1.263.125q-2.725 0-4.612-1.888T2.025 8.3q0-1.05.313-2.025t.912-1.8L7.075 8.3L8.5 6.9L4.675 3.05q.85-.625 1.825-.937t2-.313q2.725 0 4.612 1.888T15 8.3q0 .65-.125 1.288T14.5 10.8l6.875 6.875q.575.575.588 1.413T21.4 20.5l-.675.7q-.575.6-1.413.613t-1.437-.588ZM9.2 9Z"
+              />
+            </svg>
+          </div>
+          <div class="about__container container">
+            <img src="/images/dec.svg" alt="" class="column-about__decoration" />
+
+            <div class="about__columns">
+              <div class="about__column column-about">
+                <img src="/images/1.png" alt="" class="column-about__image" />
+                <div class="column-about__info">
+                  <div class="column-about__info-card">
+                    <h3 class="column-about__info-title">Евакуатор 24/7</h3>
+                    <p class="column-about__info-subtitle">Є дубль-кабіна - місце для пасажирів</p>
+                    <ul class="column-about__info-list">
+                      <li>ШВИДКО</li>
+                      <li>НАДІЙНО</li>
+                      <li>ПРОФЕСІЙНО</li>
+                    </ul>
+                  </div>
+                  <a href="#" class="column-about__info-phone">+380506525388</a>
+                </div>
+              </div>
+              <div class="about__column column-about">
+                <div class="column-about__text">
+                  <p>Ми надаємо швидку та надійну допомогу евакуатора 24/7, щоб ви мінімізували час очікування.</p>
+                  <p>Наші професійні водії безпечно доставлять ваш автомобіль до СТО чи іншого місця призначення.</p>
+                  <p>Зателефонуйте зараз, і ми негайно виїдемо, щоб швидко повернути вам спокій та мобільність.</p>
+                </div>
+                <img src="/images/2.png" alt="" class="column-about__image" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>

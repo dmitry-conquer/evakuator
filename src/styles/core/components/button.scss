@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.button {
+  display: inline-block;
+  padding: fluid(12, 22) fluid(20, 31);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: rem(16);
+  font-family: var(--font-family-accent);
+  border-radius: rem(30);
+  border: rem(1) solid var(--color-accent);
+  transition: all 0.3s ease;
+
+  @include hover {
+    background-color: var(--color-white);
+    color: var(--color-accent);
+  }
+}

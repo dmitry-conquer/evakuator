@@ -1,0 +1,90 @@
+@use "helpers" as *;
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-black);
+  background-color: #f3f3f3;
+  line-height: 1.5;
+}
+
+// ===========================
+// 📐 CONTAINER & LAYOUT
+// ===========================
+
+.site-page {
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+// ===========================
+// ✒️ TYPOGRAPHY
+// ===========================
+
+h1,
+.heading-xl {
+  font-size: fluid(50, 100);
+  font-family: var(--font-family-accent);
+  line-height: 1;
+  color: var(--color-primary);
+  -webkit-text-stroke: 2px var(--color-black);
+  text-transform: uppercase;
+}
+
+h2,
+.heading-lg {
+  color: var(--color-white);
+  font-size: fluid(28, 40);
+  text-transform: uppercase;
+  font-family: var(--font-family-accent);
+}
+
+h3,
+.heading-md {
+}
+
+h4,
+.heading-sm {
+}
+
+h5,
+.heading-xs {
+}
+
+p,
+.text-base {
+}
+
+a:not([class]) {
+  @include hover {
+    text-decoration: underline;
+  }
+}
+
+@include large {
+  br {
+    display: none !important;
+  }
+}
+
+.section-heading {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: rem(16) rem(20);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(10);
+}

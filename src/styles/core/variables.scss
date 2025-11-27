@@ -1,0 +1,33 @@
+@use "helpers" as *;
+
+// ===================================
+// 🎨 Design Tokens System
+// ===================================
+
+:root {
+  // ===============================
+  // 🌈 COLOR PALETTE
+  // ===============================
+
+  --color-white: #ffffff;
+  --color-black: #2B4448;
+
+  --color-primary: #1e5dbc;
+  --color-secondary: #f0fd01;
+  --color-accent: #e12320;
+
+  // ===============================
+  // 🔤 TYPOGRAPHY SYSTEM
+  // ===============================
+
+  // Font families
+  --font-family-base: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-family-accent: "Days One", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+  // ===============================
+  // 🎯 LAYOUT
+  // ===============================
+
+  --container-width: #{rem(1240)};
+  --container-padding-x: #{rem(20)};
+}
