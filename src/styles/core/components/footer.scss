@@ -1,1 +1,100 @@
 @use "../helpers" as *;
+
+.footer {
+  background-color: var(--color-primary);
+  padding-block: fluid(40, 100);
+  background-position: 70% bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include medium {
+      flex-direction: column;
+      row-gap: rem(40);
+    }
+  }
+  &__content {
+    flex: 0 1 rem(480);
+    @include medium {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__title {
+    font-size: fluid(24, 28);
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-bottom: rem(20);
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 30);
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 30);
+  }
+
+  &__contacts-item {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(10, 20);
+  }
+
+  &__contacts-icon {
+    flex-shrink: 0;
+    width: fluid(40, 64);
+    height: fluid(40, 64);
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__contacts-item-content {
+    color: var(--color-white);
+    font-size: rem(16);
+  }
+
+  &__contacts-item-title {
+    font-family: var(--font-family-accent);
+    text-transform: uppercase;
+  }
+
+  &__contacts-item-text {
+  }
+
+  &__tiktok {
+    
+
+  }
+
+  &__tiktok-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(10, 20);
+    align-items: center;
+
+    @include medium {
+      align-items: flex-start;
+    }
+  }
+
+  &__tiktok-title {
+    font-size: fluid(24, 28);
+    text-transform: uppercase;
+    color: var(--color-white);
+    
+  }
+
+  &__tiktok-icon {
+   @include small {
+    max-width: 70%;
+   }
+  }
+}

@@ -122,10 +122,12 @@
     width: 100%;
     display: block;
     transition: all 0.3s ease;
+    border-top: rem(1) solid transparent;
 
     @include hover {
       background-color: var(--color-white);
       color: var(--color-primary);
+      border-color: var(--color-primary);
     }
   }
 
